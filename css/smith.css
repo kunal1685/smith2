@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-text-color: rgb(5, 192, 192);
+}
+html{
+    font-size: 15px;
+}
+
+/* ---------------- navigation starts now ----------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 4%;
+    box-shadow: 5px 0px 5px 0px #999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1% 4%;
+    background-color: #fff;
+}
+nav img{
+    width: 60px;
+    height: auto;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 0px 20px;
+    color: #777;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+nav h4{
+    color: var(--main-text-color);
+    font-weight: 600;
+    text-shadow: 0px 0px 1px var(--main-text-color);
+    text-decoration: underline;
+}
+
+/* -------------------- banner starts now -------------------- */
+.inner{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.banner{
+    margin-top: 6.8%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.banner .pic{
+    flex-basis: 50%;
+    text-align: center;
+}
+.banner img{
+    width: 70%;
+    height: auto;
+}
+.banner .text{
+    flex-basis: 50%;
+}
+.banner .text h1{
+    font-size: 3rem;
+    color: rgb(2, 2, 61);
+}
+.banner p{
+    color: gray;
+    font-size: 0.9rem;
+}
+.btn{
+    background-color: var(--main-text-color);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px var(--main-text-color);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: rgba(9, 193, 193, 0.682);
+}
+
+/* ----------------------- experties starts now ----------------------- */
+.section1{
+    padding: 70px 0px;
+}
+.section1 .left{
+    flex-basis: 50%;
+}
+.section1 .left >.flex{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.section1 h5{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--main-text-color);
+    text-shadow: 0px 0px 1px var(--main-text-color);
+}
+.section1 h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(2, 2, 61);
+}
+.section1 h4{
+    color: rgb(2, 2, 61);
+    margin-top: 30px;
+}
+.section1 p{
+    color: #333;
+    font-size: 0.90rem;
+}
+.section1 i{
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.fa-html5{
+    color: #FF5700;
+}
+.fa-css3-alt{
+    color: #1877F2;
+}
+.fa-js{
+    color: #F57D00;
+}
+.section1 .right{
+    flex-basis: 50%;
+}
+.section1 img{
+    width: 90%;
+}
+
+/* ----------------------- section2 starts now ----------------------- */
+.section2{
+    padding: 70px 0px;
+}
+.section2 h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(2, 2, 61);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.section2 .pic{
+    width: 100%;
+    text-align: center;
+}
+.section2 img{
+    width: 80%;
+}
+.btn1{
+    text-align: center;
+    transition: 0.5s;
+}
+
+/* ----------------------- section3 starts now ----------------------- */
+.section3{
+    padding: 70px 0px;
+    text-align: center;
+    background-image: url("../images1/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.section3 h5{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--main-text-color);
+    text-shadow: 0px 0px 1px var(--main-text-color);
+}
+.section3 h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(2, 2, 61);
+}
+
+.client{
+    margin-top: 40px;
+}
+.section3 .box{
+    flex-basis: 32%;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 5px rgba(22, 16, 16, 0.279);
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.section3 .box:hover{
+    transform: scale(1.1);
+}
+.section3 .client img{
+    width: 70px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.section3 p{
+    color: #333;
+    font-size: 0.80rem;
+    padding: 0px 30px;
+}
+.section3 button{
+    font-size: 0.6rem;
+    padding: 5px 12px;
+    border: none;
+    outline: none;
+    background-color: var(--main-text-color);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* ----------------------- section4 starts now ----------------------- */
+.section4{
+    padding: 70px 0px;
+    text-align: center;
+}
+.section4 img{
+    width: 40%;
+}
+.section4 .form-group{
+    display: flex;
+    justify-content: center;
+}
+.section4 form{
+    width: 400px;
+    padding: 6px 6px 6px 20px;
+    box-shadow: 0px 0px 5px rgba(22, 16, 16, 0.279);
+    border-radius: 25px;
+    margin-top: 20px;
+    display: flex;
+}
+.section4 input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+.section4 h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: rgb(2, 2, 61);
+    margin: 10px 0px;
+}
+.section4 button{
+    font-size: 0.6rem;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    background-color: var(--main-text-color);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ----------------------- footer starts now ----------------------- */
+footer{
+    text-align: center;
+    color: rgb(2, 2, 61);
+    font-size: 0.8rem;
+}
+footer p{
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 2% 4%;
+    }
+    nav ul{
+        display: none;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+    .banner{
+        margin-top: 25%;
+        padding-top: 0px;
+        padding-bottom: 80px;
+    }
+    .banner .text{
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    /* section1 */
+    .section1 h1{
+        font-size: 2rem;
+    }
+    .section1 .right{
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 5px;
+    }
+    .section1 .left{
+        padding-left: 25px;
+        flex-basis: 50%;
+    }
+
+    /* section2 */
+    .section2 h1{
+        font-size: 2rem;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    /* section3 */
+    .client{
+        padding: 0px 40px;
+        margin-top: 40px;
+    }
+    .section3 .box:nth-child(2){
+        margin: 40px 0px;
+    }
+    .section3 h1{
+        font-size: 2rem;
+    }
+
+    /* section4 */
+    .section4{
+        padding: 0px 10px;
+    }
+    .section4 h1{
+        font-size: 2rem;
+        padding: 0px 20px;
+    }
+
+    /* footer */
+    footer{
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .banner{
+        padding: 50px 50px 0px;
+    }
+    .section1{
+        padding-left: 50px;
+    }
+    .section3{
+        padding: 0px 30px;
+    }
+}
